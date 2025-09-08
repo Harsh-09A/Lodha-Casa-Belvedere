@@ -69,6 +69,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
 
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -291,7 +297,8 @@
           <button
             class="pro-button effectMoveGradient btn-primary-estate mt-1"
             data-bs-toggle="modal"
-            data-bs-target="#popupModal">
+            data-bs-target="#popupModal"
+            data-modal-title="Download Brochure">
             Download Brochure
           </button>
         </div>
@@ -535,7 +542,7 @@
                   class="btn btn-primary-estate me-3 mb-3 cta-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#popupModal"
-                  data-modal-title="Book Site Visit - 3 BHK">
+                  data-modal-title="Book Site Visit - 3 BHK Optima">
                   Book Site Visit
                 </button>
               </div>
@@ -555,7 +562,7 @@
                   class="btn btn-primary-estate me-3 mb-3 cta-btn"
                   data-bs-toggle="modal"
                   data-bs-target="#popupModal"
-                  data-modal-title="Book Site Visit - Jodi Flats">
+                  data-modal-title="Book Site Visit - 3 BHK Ultima">
                   Book Site Visit
                 </button>
               </div>
@@ -752,7 +759,7 @@
                       </p>
                     </div>
                     <div class="time-badge">
-                      <i class="fas fa-clock"></i> 15 mins
+                      <i class="fas fa-clock"></i> 10 mins
                     </div>
                   </div>
 
@@ -769,7 +776,7 @@
                       </p>
                     </div>
                     <div class="time-badge">
-                      <i class="fas fa-clock"></i> 20 mins
+                      <i class="fas fa-clock"></i> 5 mins
                     </div>
                   </div>
 
@@ -1036,15 +1043,16 @@
       class="modal fade"
       id="popupModal"
       tabindex="-1"
-      aria-labelledby="leadModalLabel"
+      aria-labelledby="ModalLabel"
       aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <!-- Modal Title -->
           <div class="modal-header">
-            <h5 class="modal-title" id="leadModalLabel">Enquire Now</h5>
+            <h5 class="modal-title" id="ModalLabel">Enquire Now</h5>
             <button
               type="button"
-              class="btn-close btn-close-white"
+              class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>

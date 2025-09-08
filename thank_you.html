@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{Project Name}</title>
+    <title>Lodha Casa Belvedere</title>
 
     <!-- SEO -->
     <meta property="og:title" content="" />
@@ -32,6 +32,11 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"></script>
 
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+      rel="stylesheet" />
+
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -39,6 +44,12 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation Library -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Fancy Box CDN -->
     <script
@@ -57,6 +68,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet" />
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
 
     <!-- Custom CSS & JS  -->
     <link rel="stylesheet" href="css/style.css" />
@@ -80,11 +97,15 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
-              id="logo"
-              src="img/logo/logo.svg"
+              src="img/logo/logo.png"
               alt="Logo"
-              height="60px"
+              height="50px"
               style="padding-left: 10%" />
+            <img
+              src="img/logo/logo2.svg"
+              alt="Logo"
+              height="50px"
+              style="padding-left: 5%" />
           </a>
           <button
             class="navbar-toggler"
@@ -166,58 +187,69 @@
     <!-- Footer -->
     <footer id="footer">
       <div class="container text-center text-white">
-        <div class="d-flex justify-content-center">
+        <!-- <div class="d-flex justify-content-center">
           <div class="qrcode">
-            <img src="img/qr/qr.webp" class="m-2" />
+            <img src="img/logo/footer logo.png" />
           </div>
+        </div> -->
+
+        <div class="">
+          <small>
+            <style>
+              .newlist {
+                list-style: none;
+                line-height: 25px;
+                padding-left: 22px;
+                text-align: center;
+              }
+              .newlist li:before {
+                content: "✓";
+                font-weight: 800;
+                margin-right: 10px;
+                font-size: 13px;
+                margin-left: -22px;
+              }
+            </style>
+            <ul class="newlist">
+              <li>
+                Project Registered under Government of India RERA Act 2016
+              </li>
+              <li>
+                <b>RERA Project Registration No:- </b>P51700017506, P51700033751
+              </li>
+              <li>
+                <b>
+                  Government RERA Authorised Advertiser's Registration No:-
+                </b>
+                A51700037751
+              </li>
+              <li>
+                <b>Site Address:- </b> Premier Colony Ground, Sonar Pada,
+                Dombivli East, Dombivli, Maharashtra 421203
+              </li>
+            </ul>
+          </small>
         </div>
         <div>
-          <p>MahaRERA Registration No.: P51800020208</p>
-
-          <p>
-            <a
-              href="https://maharera.mahaonline.gov.in"
-              style="color: #fff; text-decoration: none">
-              maharera.mahaonline.gov.in
-            </a>
-          </p>
-
-          <!-- <div class="text-center">
-                  <p class="contact_details">
-                      <b> Site Address:-</b> ---
-                      <br />
-                      <b> Contact No:-</b> +91 ---
-                      <br />
-                      <b> Email Address:-</b> support@---.com
-                  </p>
-              </div> -->
-
           <div>
             <span>
-              Disclaimer : The information provided on this website is intended
-              exclusively for informational purposes and the pricing information
-              presented on this website is subject to alteration without advance
-              notification, and the assurance of property availability cannot be
-              guaranteed. The images showcased on this website are for
-              representational purposes only and may not accurately reflect the
-              actual properties. Please Note That This Is The Official Website
-              Of ------- by -----------.
+              Disclaimer :This website is managed by Prerna Yogesh Thakkar. Our
+              Rera No. is <em> A51700037751</em>. We are an authorised marketing
+              partner for this project. The information provided on this website
+              is intended exclusively for informational purposes. This Website
+              Is Not An Official Site And It Belongs To The Authorized Marketing
+              Partner. All rights reserved. The content, design, and information
+              on this website are protected by copyright and other intellectual
+              property rights. Any unauthorized use or reproduction of the
+              content may violate applicable laws.
             </span>
             <span id="dots20" style="display: inline"></span>
             <span id="more20" style="display: none">
               <span>
-                We May Share Data With Real Estate Regulatory Authority (RERA)
-                Registered Brokers/Companies For Further Processing As Required.
-                We May Also Send Updates And Information To The Mobile Number Or
-                Email ID Registered With Us. All rights reserved. The content,
-                design, and information on this website are protected by
-                copyright and other intellectual property rights. Any
-                unauthorized use or reproduction of the content may violate
-                applicable laws. For accurate and up-to-date information
-                regarding services, pricing, availability, and any other
-                details, it is recommended to contact us directly through the
-                provided contact information on this website. Thank you for
-                visiting our website.
+                For accurate and up-to-date information regarding services,
+                pricing, availability, and any other details, it is recommended
+                to contact us directly through the provided contact information
+                on this website. Thank you for visiting our website.
               </span>
             </span>
             <br />
@@ -229,7 +261,7 @@
             </span>
           </div>
 
-          <p class="pb-4 pt-2">
+          <p class="pb-4 policy_links">
             <a
               href="privacy_policy.html"
               target="_blank"
@@ -244,40 +276,26 @@
               Terms And Conditions
             </a>
           </p>
+
+          <div class="mt-4">
+            <!-- <p>
+              Copyright © 2025 Invicta (Avianna Infra LLP). All RightsReserved.
+            </p> -->
+            <p class="pb-4 policy_links">
+              Designed & Developed by
+              <a
+                href="https://letsdigin.in/"
+                target="_blank"
+                style="text-decoration: none"
+                >DigIN Media</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- Mobile Footer Fixed Button -->
-    <div class="container-fluid fixed-bottom action-footer-container">
-      <ul class="nav nav-fill action-footer">
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('https://wa.me/+91123456789 ');"
-            href="https://wa.me/+91123456789 "
-            class="text-decoration-none text-white">
-            <i class="fa-brands fa-whatsapp nav-icon"> </i> Whatsapp
-          </a>
-        </li>
-        <li class="nav-item ps-1">
-          <a
-            onclick="return gtag_report_conversion('tel:+91123456789 ');"
-            href="tel:+91123456789 "
-            class="text-decoration-none text-white">
-            <i class="fa-solid fa-phone me-2"></i> Call Us
-          </a>
-        </li>
-
-        <li
-          class="nav-item"
-          data-bs-toggle="modal"
-          data-bs-target="#popupModal">
-          <i class="fa-solid fa-download nav-icon"></i> Brochure
-        </li>
-      </ul>
-    </div>
-
-    <!-- Modal -->
+    <!-- Lead Capture Modal Form -->
     <div
       class="modal fade"
       id="popupModal"
@@ -288,18 +306,18 @@
         <div class="modal-content">
           <!-- Modal Title -->
           <div class="modal-header">
-            <!-- <h1 class="modal-title fs-5" id="ModalLabel">Modal title</h1> -->
+            <h5 class="modal-title" id="ModalLabel">Enquire Now</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>
-
           <!-- Modal Body -->
           <div class="modal-body">
-            <div class="container text-center">
-              <img src="img/logo/logo.svg" alt="" height="80px" />
+            <div class="container text-center modal-logo">
+              <img src="img/logo/logo2.svg" alt="" height="80px" />
+
               <p class="mt-2">Register Here And Avail The Best Offers!!</p>
             </div>
             <div class="container">
@@ -392,20 +410,66 @@
                     </p>
                   </form>
                 </div>
+
+                <!-- <div class="or">or</div> -->
+
+                <!-- <div class="slide-submit poppins-regular poppins-regular">
+                  <button
+                    id="slide-submit-btn"
+                    class="poppins-regular ui-draggable ui-draggable-handle"
+                    style="left: 0px; transition: 100ms linear">
+                    <img
+                      loading="lazy"
+                      alt="Delta Prestige"
+                      src="./img/extras/swipe-arrow.png" />
+                  </button>
+                  <label> Slide to connect on WhatsApp</label>
+                </div> -->
               </div>
             </div>
           </div>
-
-          <!-- Modal Footer -->
-          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
 
-    <!-- Jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"></script>
+    <!-- Mobile Footer Fixed Button -->
+    <div class="container-fluid fixed-bottom action-footer-container">
+      <ul class="nav nav-fill action-footer">
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal"
+          data-modal-title="Book Site Visit">
+          <a class="text-decoration-none">
+            <i class="fa-solid fa-taxi nav-icon"> </i> Site Visit
+          </a>
+        </li>
+        <li
+          class="nav-item ps-1"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal"
+          data-modal-title="Call Back">
+          <a class="text-decoration-none">
+            <i class="fa-solid fa-phone me-2"></i> Call Back
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          data-bs-toggle="modal"
+          data-bs-target="#popupModal"
+          data-modal-title="Download Brochure">
+          <i class="fa-solid fa-download nav-icon"></i> Brochure
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile Footer Fixed Button Ends -->
+
+    <!-- Particle Cursor -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <script>
+      new cursoreffects.fairyDustCursor({
+        colors: ["#ff00ff", "#00ffff", "#ffff00", "#ff0000", "#00ff00"],
+      });
+    </script>
   </body>
 </html>

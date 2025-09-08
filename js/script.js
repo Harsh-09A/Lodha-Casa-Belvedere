@@ -21,3 +21,24 @@ AOS.init({
   easing: "ease-in-out",
   once: true,
 });
+
+// Dynamic modal title based on which button was clicked
+const leadModal = document.getElementById("popupModal");
+if (leadModal) {
+  leadModal.addEventListener("show.bs.modal", function (event) {
+    const button = event.relatedTarget;
+    const modalTitle = button.getAttribute("data-modal-title");
+    const modalTitleElement = leadModal.querySelector(".modal-title");
+
+    if (modalTitle && modalTitleElement) {
+      modalTitleElement.textContent = modalTitle;
+    }
+  });
+}
+
+// Popup Modal
+$(window).ready(function () {
+  setTimeout(function () {
+    $("#popupModal").modal("show");
+  }, 3000);
+});
